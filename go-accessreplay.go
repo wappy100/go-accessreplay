@@ -69,7 +69,7 @@ func main() {
 	regEx := `(\S+)\s+(\S+)\s+(\S+)\s+\[(.*?)\]\s+"(.*?)"\s+(\S+)\s+(\S+)\s+"(.*?)"\s+"(.*?)"\s+"(.*?)"`
 	r := regexp.MustCompile(regEx)
 
-	domain := "http://localhost/"
+	domain := "http://localhost"
 	client := &http.Client{}
 
 	reader := bufio.NewReaderSize(fp, 4096)
